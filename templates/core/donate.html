@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/donate.css' %}">
+
+    <link rel="stylesheet" media="screen and (max-width: 1185px)" href="{% static 'media/mobile-donate.css' %}" />
+
+</head>
+
+<body>
+        <div class="nav-container">
+            <div class="full-container-donate">
+            <div class="container-80">
+                <div class="logo">
+                    <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="niceLOGO"></a>
+                </div>
+
+                <div class="menu">
+                    <ul class="nav-links">
+                        <li> <a href="/about"> ABOUT US </a></li>
+                        <li> <a href="/donate"> DONATE </a> </li>
+                        <li> <a href="/project"> PROJECTS</a></li>
+                        <li> <a href="/contact"> CONTACT US</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="burger-menu">
+                    <div class="dash1"></div>
+                    <div class="dash2"></div>
+                    <div class="dash3"></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <!-- DONATE FORM -->
+
+        <div class="donate-full-container">
+            <div class="donate-wrapper">
+                <div class="container-60">
+                    <h1>Donate to protect wildlife and end the commercial trade in wildlife for human consumption</h1>
+                    <p>As we continue to recover from the COVID-19 coronavirus pandemic, the wide-ranging impact of the commercial wildlife trafficking, particularly birds and mammals, for human consumption has never been clearer. And as the world contends with the consequences, the need to shut down this trade has never been more urgent.</p>
+                    <p>Your gift supports the our work to end the commercial trade in wildlife for human consumption, stop the spread of zoonotic diseases, and protect threatened and endangered species.</p>
+
+
+                    <div class="donate-type">
+                        <div class="button-1" id="donate-type-one" onclick="changeType(event)"> ONE-TIME</div>
+                        <div class="button-1" id="donate-type-two" onclick="changeType(event)">MONTHLY</div>
+                    </div>
+
+                    <p style="color: rgb(175, 175, 175); font-weight: 800; margin-bottom: 5px;"> SELECT AMOUNT</p>
+
+                    <div class="donate-amount">
+                        <div class="button-1 button-amount" id="donate-one" onclick="changeAmount(event)">$10</div>
+                        <div class="button-1 button-amount" id="donate-two" onclick="changeAmount(event)">$20</div>
+                        <div class="button-1 button-amount" id="donate-three" onclick="changeAmount(event)">$30</div>
+                        <div class="button-1 button-amount" id="donate-four" onclick="changeAmount(event)">$50</div>
+                        <div class="button-1 button-amount" id="donate-five" onclick="changeAmount(event)">$100</div>
+                        <input type="text" style="font-size: 13px; cursor: text;" placeholder="Other" onclick="removeAmount()" class="button-1">
+                    </div>
+
+
+                    <p style="color: rgb(175, 175, 175); font-weight: 800; margin-bottom: 5px;"> PAYMENT METHOD</p>
+
+                    <div class="payment-method">
+                        <div class="button-1 payment-type" id="payment-one" onclick="changePayment(event)">CREDIT CARD</div>
+                        <div class="button-1 payment-type" id="payment-two" onclick="changePayment(event)">CHECKING ACCOUNT</div>
+                   </div>
+
+                <H3 style="margin-bottom: 20px;">Payment Information</H3>
+
+                <p class="text-1" style="margin-bottom:5px;"> FIRST NAME</p>
+                <input type="text" class="button-2">
+
+                <p class="text-1" style="margin-bottom:5px;"> LAST NAME</p>
+                <input type="text" class="button-2">
+
+                <p class="text-1" style="margin-bottom:5px;"> EMAIL</p>
+                <input type="email" class="button-2">
+
+
+                <br><br><br><br>
+
+                <p class="text-1" style="margin-bottom:5px;">CREDIT CARD NUMBER</p>
+                <input type="text" class="button-2" >
+
+                <p class="text-1" style="margin-bottom:5px;">EXPIRATION DATE</p>
+                <span class="dropdown">
+                    <select>
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                    </select>
+                </span>
+
+                <span class="dropdown">
+                    <select>
+                    <option value="0">2024</option>
+                    <option value="1">2025</option>
+                    <option value="2">2026</option>
+                    <option value="3">2027</option>
+                    <option value="4">2028</option>
+                    <option value="5">2029</option>
+                    <option value="6">2030</option>
+                    <option value="7">2031</option>
+                    <option value="8">2032</option>
+                    <option value="9">2033</option>
+                    <option value="10">2034</option>
+                    <option value="11">2035</option>
+                    <option value="11">2036</option>
+                    </select>
+                </span>
+
+                <p class="text-1" style="margin-bottom:5px;">CCV</p>
+                <input type="text" class="button-2" >
+
+                <br><br><br><br><br>
+                <p class="text-1" style="margin-bottom:5px;"> BILLING ADDRESS</p>
+                <input type="text" class="button-2" >
+
+                <p class="text-1" style="margin-bottom:5px;"> CITY</p>
+                <input type="text" class="button-2" >
+
+                <p class="text-1" style="margin-bottom:5px;"> ZIP-CODE</p>
+                <input type="text" class="button-2" >
+
+
+
+                <p style="font-size: 10px; margin-bottom: 5px;">By clicking Donate, your banking credentials are transferred securely</p>
+                <div class="button-1 donate-button">DONATE</div>
+
+                <p style="margin-top: 10px; font-size: 12px; line-height: 1.6;"> By making a gift to the Global Nature Conservation Platform, you’ll join us in our commitment to save wildlife and wild places. You'll receive our monthly email newsletter and occasional updates on how you can help ensure a future for imperiled wildlife. You can unsubscribe at any time.</p>
+
+            </div>
+        </div>
+
+        <div class="donate-footer">
+            <div class="information">
+                <div class="box box-1">
+                    <p>OTHER WAYS TO DONATE</p>
+                    <p>By mail: Global Nature Org. <br> Attn: Donations, School Of Wildlife Conservation, <br> Kigali,  SOWC 42240.</p>
+                </div>
+
+                <div class="box box-2">
+                    <p>CONTACT US</p>
+                    <p>For questions or more information <br> please email us at donate@gncp.com</p>
+                </div>
+
+                <div class="box box-3">
+                <p>FOLLOW US AT</p>
+                    <p>facebook twitter and many other sites.</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                @2024 Global Nature Organisation
+            </div>
+        </div>
+    </div>
+
+  <script src="{% static 'js/burger-menu.js' %}"></script>
+  <script src="{% static 'js/donate.js' %}"></script>
+</body>
+</html>

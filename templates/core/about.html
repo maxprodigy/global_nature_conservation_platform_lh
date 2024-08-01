@@ -1,0 +1,197 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+    <!-- Media Query -->
+    <link rel="stylesheet" media="screen and (max-width: 1080px)" href="{% static 'media/mobile-all.css' %}" />
+
+</head>
+
+
+<body>
+        <div class="nav-container">
+            <div class="full-container">
+                <div class="container-80">
+                    <div class="logo">
+                        <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="niceLOGO"></a>
+                    </div>
+
+                    <div class="menu">
+                        <ul class="nav-links">
+                            <li> <a href="/about"> ABOUT US </a></li>
+                            <li> <a href="/donate"> DONATE   </a></li>
+                            <li> <a href="/project"> PROJECTS   </a></li>
+                            <li> <a href="/contact"> CONTACT US </a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="burger-menu">
+                        <div class="dash1"></div>
+                        <div class="dash2"></div>
+                        <div class="dash3"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="nav-text">
+                <h1>WE'VE BEEN HERE FOR A WHILE</h1>
+                <p>Global Conservation Organization was established in 2021 with the sole purpose of saving wildlife, forest and natural habitats. </p>
+                <p class="button-4"> <a href="/donate" style="color: white;"> Support Us </a> </p>
+            </div>
+
+            <br><br><br><br><br><br><br>
+
+        </div>
+
+
+    <!-- About -->
+
+        <div class="about-container">
+            <div class="logo">
+                <a href="/"><img src="{% static 'images/logo-2-color.png' %}" alt="niceLOGO"></a>
+            </div>
+
+            <div class="our-aim">
+                <h1>Our <span> Mission</span>: Engage in promoting the health of Wild Animals along with their Natural Habitats </h1>
+                <p>Our National Forests and grasslands are at the core of natural riches and yet today these treasures are threatened by unprecedented challenges</p>
+            </div>
+
+            <div class="images container-60">
+                <div class="images-0" id="images-1"><img src="{% static 'images/aim-1.png' %}" alt="" > <p> FOREST</p> </div>
+                <div class="images-0" id="images-2"><img src="{% static 'images/aim-2.png' %}" alt="" > <p style="padding-left: 0px;"> WILDLIFE</p> </div>
+                <div class="images-0" id="images-3"><img src="{% static 'images/aim-3.png' %}" alt="" > <p> WATER</p> </div>
+            </div>
+
+            <div class="about-box" id="about-box-1">
+                <div class="container-80 policy-container">
+                    <div class="policy policy1">
+                        <h2>FOREST POLICY </h2>
+                        <p>Millions of acre of native forests have been lost or degraded by unsustainable human activity, as well as wildfires, pests, diseases and other stress of climate change. Our Global Nature Conservation program is bringing these forests back to life.</p>
+                        <div class="button-4">Learn more</div>
+                    </div>
+
+                    <div class="policy policy2">
+                        <div class="box-img-1 box-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-box" id="about-box-2">
+                <div class="container-80 policy-container">
+                    <div class="policy policy1">
+                        <h2>WILDLIFE PROTECTION </h2>
+                        <p>There are many animals in Africa that are listed as endangered. It is because of the fact they are killed by poachers for their personal benefit which makes protection of animal an important task.</p>
+                        <div class="button-4">Learn more</div>
+                    </div>
+
+                    <div class="policy policy2">
+                        <div class="box-img-2 box-img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-box" id="about-box-3">
+                <div class="container-80 policy-container">
+                    <div class="policy policy1">
+                        <h2> WATER RESOURCES</h2>
+                        <p>Millions of acre of native forests have been lost or degraded by unsustainable human activity, as well as wildfires, pests, diseases and other stress of climate change. Our Global Nature Conservation program is bringing these forests back to life.</p>
+                        <div class="button-4">Learn more</div>
+                    </div>
+
+                    <div class="policy policy2">
+                        <div class="box-img-3  box-img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    <!-- Footer -->
+
+    <div class="full-container footer" >
+        <div class="container-80">
+            <div class="box box1">
+                <ul>
+                    <li><b>EXPLORE</b></li>
+                    <li>Our Mission</li>
+                    <li>News Room</li>
+                    <li>Magazine</li>
+                    <li>Events</li>
+                </ul>
+            </div>
+
+            <div class="box box2">
+                <ul>
+                    <li><b>CONNECT</b></li>
+                    <li>Contact Us</li>
+                    <li>Carrers</li>
+                    <li>FAQ</li>
+                    <li>Events</li>
+                </ul>
+            </div>
+
+            <div class="box box3">
+                <ul>
+                    <li><b>GIVE</b></li>
+                    <li>Donate</li>
+                    <li>Membership</li>
+                    <li>Volunteer</li>
+                    <li>Gift</li>
+                </ul>
+            </div>
+
+            <div class="box box4">
+                <ul>
+                    <li><b>SOCIAL</b></li>
+                    <li><i class="fab fa-facebook-f"></i> &nbsp;&nbsp; <span> Facebook</span></li>
+                    <li><i class="fab fa-twitter"></i> &nbsp; <span> Twitter</span> </li>
+                    <li><i class="fab fa-linkedin-in"></i>&nbsp; &nbsp; <span> LinkedIn </span></li>
+                    <li><i class="fab fa-reddit-alien"></i> &nbsp;&nbsp; <span> Reddit</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="logo" >
+            <a href="/"><img src="{% static 'images/logo-2-color.png' %}" alt="niceLOGO"></a>
+        </div>
+
+        <div class="copyright">
+            @2024 Global Nature Organisation
+        </div>
+
+        <script src="{% static 'js/burger-menu.js' %}"></script>
+
+    </div>
+
+    <script src="{% static 'js/about.js' %}"></script>
+</body>
+</html>
+

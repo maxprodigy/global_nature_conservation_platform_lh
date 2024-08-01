@@ -1,0 +1,22 @@
+{% extends 'authentication/base_auth.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="registration form">
+  <header>Signup</header>
+  <form action="{% url 'register' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="email" placeholder="Enter your email">
+    <input type="password" name="password" placeholder="Create a password">
+    <input type="submit" class="button" value="Signup">
+  </form>
+  <div class="signup">
+    <span class="signup">Already have an account?
+      <label for="check">
+        <a href="{% url 'login' %}">Login</a>
+      </label>
+    </span>
+  </div>
+</div>
+{% endblock content %}

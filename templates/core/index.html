@@ -1,0 +1,252 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- Icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Media Query -->
+	<link rel="stylesheet" media="screen and (max-width: 1080px)" href="{% static 'media/mobile-index.css' %}" />
+</head>
+
+<body>
+    <div class="full-container">
+        <div class="container-80 nav-container">
+            <div class="logo">
+                <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="niceLOGO"></a>
+            </div>
+
+            <div class="menu">
+				<ul class="nav-links">
+					<li> <a href="/about"> ABOUT US </a></li>
+					<li> <a href="/donate"> DONATE   </a></li>
+					<li> <a href="/project"> PROJECTS   </a></li>
+					<li> <a href="/contact"> CONTACT US </a></li>
+					{% if not user.is_authenticated %}
+						<li>
+							<a href="/auth/login" class="button-6">Login</a>
+						</li>
+					{% else %}
+						<li>
+							<a href="/auth/logout" class="button-6">Logout</a>
+						</li>
+					{% endif %}
+				</ul>
+			</div>
+
+			<div class="burger-menu">
+				<div class="dash1"></div>
+				<div class="dash2"></div>
+				<div class="dash3"></div>
+			</div>
+
+        </div>
+    </div>
+
+   <!-- Slideshow container -->
+
+<div class="full-container">
+	<div class="slideshow-container">
+
+		<h1 class='text'>Protecting Endangered Species</h1>
+		{% comment %} <button class="button-5">Learn More</button> {% endcomment %}
+		<li>
+			<a href="/auth/register" class="button-5">
+				Join US
+				<i class="fa fa-arrow-right" style="margin-left: 5px;"></i>
+			</a>
+		</li>
+	</div>
+	  <br>
+
+	  <!-- The dash indicators -->
+	  <div class="indicator">
+		<span class="dot active" id="dot-one" onclick="currentSlide(event,1)"></span>
+		<span class="dot" id="dot-two" onclick="currentSlide(event,2)"></span>
+		<span class="dot" id="dot-three" onclick="currentSlide(event,3)"></span>
+		<span class="dot" id="dot-four" onclick="currentSlide(event,4)"></span>
+	  </div>
+</div>
+
+<!-- OUR WORK -->
+
+<div class="works">
+	<h1 class="heading">&nbsp; OUR <span>WORK &nbsp; </span> </h1>
+</div>
+
+<div class="work">
+	<div class="workbox workbox1">
+		<div class="work-img1"></div>
+		<h5 class="work-text">WILDLIFE CONSERVATION</h5>
+		<p>Despite a rise in conservation efforts in Africa to 17% in 2024 compared to 15.55% in 2020, the effectiveness of the measures put in place to conserve nature has been hit with challenges such as inadequate funding, human recklessness, habitat encroachment, and climate change.</p>
+	</div>
+
+	<div class="workbox workbox2">
+		<div class="work-img2"></div>
+		<h5 class="work-text">OCEAN PRESERVATION</h5>
+		<p>Africa's vast ocean resources are cruicial for the continent's economic development, food security, and environmental health. However, these riches face significant threats that jeopardize their long term sustainability.</p>
+	</div>
+
+	<div class="workbox workbox3">
+		<div class="work-img3"></div>
+		<h5 class="work-text">HABITAT PROTECTION</h5>
+		<p>Across Africa, a wave of habitat destruction is jeopardizing the continent's remarkable biodiversity and undermining it's ecological health. This widespread loss threatens not just wildlife, but also the wellbeing of human communities.</p>
+	</div>
+</div>
+
+<!-- STATISTICS -->
+
+<div class="full-container stats">
+	<div class="container-80">
+
+
+		<div class="statbox box1">
+			<span><img src="{% static 'images/logo-2-color.png' %}" alt="" style="width: 90%;"></span>
+		</div>
+
+		<div class="statbox box2">
+			<p>Total Trees Planted</p>
+			<span>3,957</span>
+		</div>
+
+		<div class="statbox box3">
+			<p>Total Animals Rescued</p>
+			<span>3,498</span>
+		</div>
+
+		<div class="statbox box4">
+			<p>Reduced CFC</p>
+			<span>4.3 Tons</span>
+		</div>
+	</div>
+</div>
+
+<div class="button-3"> LEARN MORE</div>
+
+<br><br><br>
+
+
+
+
+<!-- EVENTS -->
+<div class="container-80 events">
+
+	<div class="eventbox box1">
+		<h2>Let's Reforest <br> Our Africa Together </h2>
+		<p>Millions of acre of native forests have been lost or degraded by unsustainable human activity, as well as wildfires, pests, diseases and other stress of climate change. Our Global Nature Conservation program is bringing these forests back to life.</p>
+	</div>
+
+	<div class="eventbox box2">
+		<div class="box-img"></div>
+		<!-- <img src="images/project-6.jpg" alt="" style="width: 100%;"> -->
+		<div class="button-4">Sanitation work</div>
+	</div>
+
+	<div class="eventbox box3">
+		<div class="box-img"></div>
+		<div class="button-4">Priority Landscapes</div>
+	</div>
+
+</div>
+
+<div class="container-80 policy-container">
+	<div class="policy policy1">
+		<h2>FOREST POLICY </h2>
+		<p> Our Global Nature Conservation program is bringing these forests back to life. Millions of acre of native forests have been lost or degraded by unsustainable human activity, as well as wildfires, pests, diseases and other stress of climate change.</p>
+		<div class="button-4">Learn more</div>
+	</div>
+
+	<div class="policy policy2">
+		<div class="box-img">
+
+		</div>
+	</div>
+</div>
+
+
+<!-- NEWS SHELTER / SUBSCRIBE-->
+
+<div class="full-container signup">
+	<div class="container-60">
+		<h2>Sign up to receive daily updates of our work</h2>
+		<div class="input">
+			<input type="text" placeholder="Email">
+			<button> <b> Sign Up </b></button>
+		</div>
+	</div>
+</div>
+
+
+
+
+ <!-- FOOTER -->
+<div class="full-container footer" >
+
+	<div class="container-80" >
+		<div class="box box1">
+			<ul>
+				<li><b>EXPLORE</b></li>
+				<li>Our Mission</li>
+				<li>News Room</li>
+				<li>Magazine</li>
+				<li>Events</li>
+			</ul>
+		</div>
+
+		<div class="box box2">
+			<ul>
+				<li><b>CONNECT</b></li>
+				<li>Contact Us</li>
+				<li>Carrers</li>
+				<li>FAQ</li>
+				<li>Events</li>
+			</ul>
+		</div>
+
+		<div class="box box3">
+			<ul>
+				<li><b>GIVE</b></li>
+				<li>Donate</li>
+				<li>Membership</li>
+				<li>Volunteer</li>
+				<li>Gift</li>
+			</ul>
+		</div>
+
+		<div class="box box4">
+			<ul>
+				<li><b>SOCIAL</b></li>
+				<li><i class="fab fa-facebook-f"></i> &nbsp;&nbsp; <span> Facebook</span></li>
+				<li><i class="fab fa-twitter"></i> &nbsp; <span> Twitter</span> </li>
+				<li><i class="fab fa-linkedin-in"></i>&nbsp; &nbsp; <span> LinkedIn </span></li>
+				<li><i class="fab fa-reddit-alien"></i> &nbsp;&nbsp; <span> Reddit</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="logo" style="width: 80%; margin:auto;  padding: 15px; 	border-bottom: 1px solid rgb(170, 170, 170,0.4);">
+		<a href="/"><img src="{% static 'images/logo-2-color.png' %}" alt="niceLOGO" style="display:block; width: 20%; margin: auto;"></a>
+	</div>
+
+	<div class="copyright">
+		@2024 Global Nature Organisation
+	</div>
+
+</div>
+
+<script src="{% static 'js/slide.js' %}"></script>
+<script src="{% static 'js/burger-menu.js' %}"></script>
+</body>
+</html>
