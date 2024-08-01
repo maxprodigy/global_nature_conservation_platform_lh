@@ -1,5 +1,6 @@
 This website is live [here](https://wildlife-conservation-platform-74hcyy70h-maxprodigys-projects.vercel.app/)
-But To Access The Login Functionality Follow These Steps:
+
+To Access The Login Functionality Follow These Steps:
 ### Steps to Setup the project
 
 1. **Clone the project locally**:
