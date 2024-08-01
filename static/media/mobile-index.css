@@ -1,0 +1,224 @@
+@media(max-width:1080px){
+  
+    .nav-container .logo img{
+        width: 70%;
+    }
+
+    .button-3{
+        padding: 0px;
+        display: none;
+    }
+}
+
+@media(max-width:1015px){
+
+    
+
+    .stats .statbox{
+        width: 100%;
+        margin: auto;
+    }
+    .stats .container-80 span{font-weight: bolder; font-size: 30px;}
+
+    .nav-links li{
+        font-size: 16px;
+        margin: 20px 10px;
+    }
+}
+
+@media(max-width:880px) {
+    .work{
+        min-width: 100%;
+        margin: 0px ;
+        /* flex-direction: column; */
+    }
+
+
+
+    .events{
+        min-width: 100%;
+        padding: 20px;
+        margin: 0px auto;
+    }
+
+    .slideshow-container .text{
+        font-size: 30px;
+    }
+
+    .policy-container{
+        min-width: 100%;
+        padding: 10px 20px;
+    }
+
+    .stats .container-80{
+        min-width: 100%;
+        margin: 10px;
+    }
+}
+
+@media(max-width:650px){
+    .events{
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .policy-container{
+        min-width: 100%;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width:800px){
+    .nav-container  .logo{ flex:2 }
+    .nav-container  .logo img{ width: 50%; }
+
+    .nav-container  .menu{ flex:1;}
+}
+
+@media (max-width:768px){
+    .slideshow-container .mySlides .text{
+        display: absolute;
+        top:60%;
+        font-size: 25px;
+    }
+
+    .slideshow-container .mySlides button{
+        display: absolute;
+        top:67%;
+        width: 20%;
+        height: 30px;
+        padding: 1px 10px;
+    }
+
+    .mySlides .button-1{
+        display: none;
+    }
+
+    .footer .container-80{
+        width: 100%;
+    }
+
+    .works{
+        max-width: 65%;
+        font-size: 18px;
+        padding: 15px 0px;
+    }
+}
+
+@media (max-width:690){
+    .button-5{
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (max-width:550px){
+
+    .indicator{
+        position: absolute;
+        top:50%;
+    }
+    .nav-container  .logo img{ width: 70%; }
+
+
+    .text{
+        position: absolute;
+        top: 62%;
+        font-size: 30px;
+    }
+
+    .button-5{
+    position: absolute;
+    bottom: 18%;
+    }
+
+    .works {
+        padding: 10px 0px 10px 0px;
+        width: 80%;
+    }
+
+    .works h1{
+        margin-bottom: 0px;
+    }
+
+    .work{
+        flex-direction: column;
+    }
+
+    .work .workbox{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .events{
+        flex-direction: column;
+    }
+
+    .events .eventbox{
+        width: 100%;
+    }
+
+    .events .box2 .box-img{
+        height: 200px;
+    }
+
+    .events .box3 .box-img{
+        height: 200px;
+    }
+
+    .policy-container{
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .policy-container .policy{
+        width: 100%;
+    }
+    
+    .policy-container .policy2 .box-img{
+        height: 200px;
+    }
+
+    .policy-container .policy1 .button-4{
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    .stats .container-80{
+        flex-direction: column;
+    }
+
+    .stats .container-80 .statbox{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .stats .container-80 .box1 {
+        width: 50%;
+    }
+
+    .signup .container-60 .input button{
+        margin-top: 10px;
+    }
+
+    .footer .container-80 .box4 li span{
+        display: none;
+    }
+}
+
+@media(max-width:488px){
+    .footer .container-80{
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer .container-80 .box {
+        width: 50%;
+    }
+
+   
+    
+}
