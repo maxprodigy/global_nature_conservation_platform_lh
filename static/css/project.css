@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Utility classes */
+
+
+.button-4{
+    display: inline;
+    color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	padding: 5px 15px;
+	text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+}
+
+.button-4:hover{
+	color: white;
+	background-color: green;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.full-container{
+    width:100%;
+}
+
+.container-80{
+    width:80%;
+    margin: auto;
+}
+
+.container-40{
+    width:40%;
+    margin: auto;
+}
+
+.container-60{
+    width:60%;
+    margin: auto;
+}
+
+.copyright{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12;
+}
+
+/* NAVBAR */
+
+
+.nav-container{
+    background: url('../images/foggy-cropped.png') no-repeat center center/cover;
+    width: 100%;
+    position: initial;
+}
+
+.nav-container .full-container{
+    background-image: linear-gradient(rgb(17, 17, 17, 0.6), rgb(155, 155, 155, 0));
+}
+
+.nav-container .container-80{
+    display: flex;
+    margin: auto auto;
+}
+
+.nav-container .container-80 .logo{ flex:1 }
+.nav-container .container-80 .menu{ flex:2; text-align: right;}
+
+.nav-container .container-80 .logo img{
+    width:70%;
+    margin-top:10px;
+}
+
+.nav-container .container-80 .menu li{ display: inline-block; margin: 4vh 3vh 2vh 3vh;}
+.nav-container .container-80 .menu a {color: white; font-weight: 700;}
+
+.nav-container .nav-text{
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+    color: whitesmoke;
+}
+
+.nav-container .nav-text p{
+    margin:10px auto 20px auto;
+}
+
+.about-container .logo{
+    width: 100%; margin:auto;
+}
+
+
+
+
+
+/* BURGER MENU */
+
+
+.burger-menu{
+    display: none;
+    margin-top: 25px;
+    z-index: 99;
+    }
+    
+.burger-menu div{
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0px;
+}
+    
+@media screen and (max-width:837px){
+
+    .nav-container .container-80 .logo img{
+         width:30%;
+         margin-top:10px;
+    }
+
+    .nav-container{
+        position: initial;
+    }
+
+    .menu{
+        position: fixed; ;
+    }
+
+    .burger-menu{
+        display: inline;
+    }
+
+    body{
+        overflow-x: hidden; 
+}
+
+    .nav-links{
+        position: fixed;
+        right: 0px;
+        height: 100%;
+        padding-top: 60px;
+        width: 40%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in;
+        z-index: 96;
+    }
+
+
+    .burger-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+    z-index: 99;
+}
+
+
+
+
+
+
+
+/* TEXT */
+
+.text{
+    width: 80%;
+    margin: auto auto;
+    color:#333;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.heading{
+    font-size: 30;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    margin: 10px auto 10px auto;
+}
+
+.heading span{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(10, 128, 30);
+}
+
+fieldset{
+    width: 60%;
+    margin: 30px auto 0px auto;
+    padding: 0px 40px;
+}
+
+legend{
+    text-align: center;
+}
+
+.main-container{
+  
+background: url('../images/foggy-1.png') center center/cover;
+padding: 30px 0px;
+}
+
+/* PROJECTS */
+
+.project-container{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: auto auto;
+    color: #333;
+    font-weight: 200;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container .project-row{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 14px;
+}
+
+.project-row p{
+    margin: 10px 0px;
+    line-height: 1.5rem;
+}
+
+.project-row p b{
+    text-transform: uppercase;
+}
+
+.project-img{
+    width: 47%;
+    height: 200px;
+}
+
+.project-description{
+    width: 48%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* INDIVIDUAL PROJECTS CSS */
+
+.project-container .row1 .project-img{ background: url('../images/project-1.jpg') center center/cover;}
+.project-container .row2 .project-img{ background: url('../images/project-2.jpg') center center/cover;}
+.project-container .row3 .project-img{ background: url('../images/project-3.jpg') center center/cover;}
+.project-container .row4 .project-img{ background: url('../images/project-4.jpg') center center/cover;}
+.project-container .row5 .project-img{ background: url('../images/project-5.jpg') center center/cover;}
+.project-container .row6 .project-img{ background: url('../images/project-6.jpg') center center/cover;}
+.project-container .row7 .project-img{ background: url('../images/project-7.jpg') center center/cover;}
+.project-container .row8 .project-img{ background: url('../images/project-5.jpg') center center/cover;}
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+    position: inherit;
+	background-color:  rgb(255, 255, 255);
+	color: rgb(19, 19, 19);
+	font-weight: 300;
+}
+
+.footer .container-80{
+	color: rgb(26, 26, 26);
+    border-bottom: 1px solid rgba(138, 138, 138, 0.4);
+    width: 80%; 
+    margin: auto;
+	display: flex;
+}
+
+.footer .container-80 .box {
+	width:24%;
+	padding: 20px 10px;
+}
+
+.footer .container-80 .box li:first-child{
+	margin-bottom: 15px;
+	cursor: default;
+}
+
+.footer .container-80 .box li{
+margin: 5px;
+font-size: 14;
+cursor: pointer;
+}
+
+.footer  .logo{
+    width: 80%; 
+    margin:auto;  
+    padding: 15px; 
+	border-bottom: 1px solid rgb(170, 170, 170,0.4);
+}
+
+.footer .logo img{
+    display:block; 
+    width: 20%; 
+    margin: auto;
+}
+
+.copyright{
+    text-align: center;
+    padding:10px;
+    font-size: 12;
+}
+

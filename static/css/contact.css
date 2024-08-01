@@ -1,0 +1,87 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-container{
+    position: initial;
+    background: rgb(53, 53, 53);
+    background: url('../images/forest.jpg') no-repeat center center/cover;
+    /* height: 300px; */
+    
+}
+
+.nav-container .full-container{
+    background-image: none;
+}
+
+
+.button-4{
+    display: block;
+    color: rgb(0, 0, 0);
+	border: 1px solid rgb(0, 0, 0);
+    padding: 5px 15px;
+    margin-top: 20px;
+	text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+}
+
+.button-4:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+
+
+
+
+/* CONTACT US */
+.contact{
+    background: url('../images/silhouette-bg.jpg') no-repeat center center/cover;
+}
+
+.contact-us{
+    width: 50%;
+    padding: 40px 20px;
+    margin: auto;
+    color: rgb(12, 12, 12);
+    font-family: 'Questrial', sans-serif;
+}
+
+
+.contact-us h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.contact-us p{
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+    font-weight: 300;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.contact-us input{
+    width: 100%;;
+    padding:5px 10px;
+    margin-bottom: 12px;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+/* GOOGLE MAPS */
+
+.map {
+    margin: 40px auto;
+}
+
+.map h1{
+    text-align: center; 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
